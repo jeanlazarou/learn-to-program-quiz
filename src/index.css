@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  background-color: #101427;
+  color: #e2e2e2;
+  overflow-x: hidden;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@media screen and (max-width: 900px) {
+  h2 {
+    font-size: 0.8em;
+  }
+}
