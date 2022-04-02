@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/learning-to-program-quiz/static/css/main.c190a0b4.css",
+    "main.js": "/learning-to-program-quiz/static/js/main.3344f330.js",
+    "index.html": "/learning-to-program-quiz/index.html",
+    "main.c190a0b4.css.map": "/learning-to-program-quiz/static/css/main.c190a0b4.css.map",
+    "main.3344f330.js.map": "/learning-to-program-quiz/static/js/main.3344f330.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c190a0b4.css",
+    "static/js/main.3344f330.js"
+  ]
+}
