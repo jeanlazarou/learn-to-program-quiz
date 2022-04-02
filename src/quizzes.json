@@ -1,0 +1,460 @@
+{
+  "version": "1.0",
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Hide a word and ask for a letter",
+      "quiz": [
+        {
+          "text": "In the following snippet, what is the output?\n```ruby\nprint \"Hello, \"\nputs \"John\"\n```\n\n",
+          "choices": [
+            "1 line: “Hello, Max”\n",
+            "2 lines, the first is “Hello” and the second is “John”\n",
+            "1 line: “Hello, John”\n\n"
+          ],
+          "response": 3
+        },
+        {
+          "text": "How does the Ruby language interpret: `\"Ruby\"`?\n",
+          "choices": [
+            "Outputs “thank you”\n",
+            "Accepts a sequence of characters having no meaning\n",
+            "Waits the user to enter some characters with the prompt “Ruby”\n\n"
+          ],
+          "response": 2
+        },
+        {
+          "text": "In the following snippet, what does “me” mean at line 2?\n```ruby\nme = \"John\"\nputs me\n```\n\n",
+          "choices": [
+            "Ruby complains because it does not understand\n",
+            "Ruby associates the name “puts” to the sequence “me”\n",
+            "Ruby understands that it must use the sequence “John” named “me”\n\n"
+          ],
+          "response": 3
+        },
+        {
+          "text": "In the following snippet, if we type “John” when the program reaches the “gets” (line 2), what happens?\n```ruby\nprint \"What is your name? \"\nme = gets\nputs me\n```\n\n",
+          "choices": [
+            "Ruby waits for you to hit the “enter” key\n",
+            "Ruby prints “don’t be shy”\n",
+            "Ruby prints “John”\n\n"
+          ],
+          "response": 1
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Wait for a proposal and check it",
+      "quiz": [
+        {
+          "text": "In the following snippet, what is the output?\n```ruby\nif 1 == 1\n  puts \"One\"\nelse\n  puts \"1\"\nend\n```\n\n",
+          "choices": [
+            "The output is “One”\n",
+            "The output is “1”\n",
+            "The output is empty\n\n"
+          ],
+          "response": 1
+        },
+        {
+          "text": "In the following snippet, what is the output?\n```ruby\nif \"John Doe\".include?(\"Doe\")\n  puts \"Yes\"\nelse\n  puts \"No\"\nend\n```\n\n",
+          "choices": [
+            "The output is “No”\n",
+            "Ruby complains because it does not understand the code\n",
+            "The output is “Yes”\n\n"
+          ],
+          "response": 3
+        },
+        {
+          "text": "Say a string understands the “add_greeting” message and prepends “hello, ”. What output do you expect in the following snippet?\n```ruby\nputs \"John\".add_greeting\n```\n\n",
+          "choices": [
+            "The output is “John”\n",
+            "Ruby complains not knowing “add_greeting”\n",
+            "The output is “hello, John”\n\n"
+          ],
+          "response": 3
+        },
+        {
+          "text": "In the following snippet, what is the output?\n```ruby\nif \"John Doe\" include?(\"Doe\")\n  puts \"Yes\"\nelse\n  puts \"No\"\nend\n```\n\n",
+          "choices": [
+            "The output is “No”\n",
+            "Ruby complains because it does not understand the code\n",
+            "The output is “Yes”\n\n"
+          ],
+          "response": 2
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Improve the proposal check",
+      "quiz": [
+        {
+          "text": "In the following snippet, what is the output?\n```ruby\nletter = \"A\".downcase\nif letter == \"A\"\n  puts \"Letter: A\"\nelsif letter == \"M\"\n  puts \"Letter: M\"\nelsif letter == \"a\"\n  puts \"Letter: a\"\nelse\n  puts \"Letter: unknown\"\nend\n```\n\n",
+          "choices": [
+            "Output is “Letter: unknown”\n",
+            "Output is “Letter: A”\n",
+            "Output is “Letter: a”\n\n"
+          ],
+          "response": 3
+        },
+        {
+          "text": "How can we know how many letters a string contains?\n",
+          "choices": [
+            "\"a string\".length\n",
+            "\"a string\".count\n",
+            "\"a string\".size\n\n"
+          ],
+          "response": 1
+        },
+        {
+          "text": "In the following snippet, what is the output?\n```ruby\nname = \"James\"\nif name.length > 5\n  puts \"Long\"\nelsif name.length > 1\n  puts \"Short\"\nelsif name.length > 3\n  puts \"Medium\"\nelse\n  puts \"Empty\"\nend\n```\n\n",
+          "choices": [
+            "Output is “Empty”\n",
+            "Output is “Short”\n",
+            "Output is “Medium”\n\n"
+          ],
+          "response": 2
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Ask for more letters",
+      "quiz": [
+        {
+          "text": "What is the word that one can use to make something several times?\n",
+          "choices": ["again do\n", "loop do\n", "several do\n\n"],
+          "response": 2
+        },
+        {
+          "text": "In the following snippet, what is the output?\n```ruby\nstate = \"idle\"\nloop do\n  puts \"again\"\n  if state == \"done\"\n    exit\n  elsif state == \"idle\"\n    state = \"again\"\n  else\n    state = \"done\"\n  end\nend\n```\n\n",
+          "choices": [
+            "Output “again”\n",
+            "Output is empty\n",
+            "Output is “again, again, again”\n\n"
+          ],
+          "response": 3
+        },
+        {
+          "text": "In the following snippet, why does Ruby complain?\n```ruby\nloop do\n  print \"Hello,\"\n  puts \"John\"\n3: syntax error, unexpected end-of-input, expecting `end'\n```\n\n",
+          "choices": [
+            "Because the loop will never end\n",
+            "Because we forgot to write “bye”\n",
+            "Because we forgot to write “end”\n\n"
+          ],
+          "response": 3
+        },
+        {
+          "text": "In the following snippet, how many times will the output contain “again”?\n```ruby\nloop do\n  puts \"again\"\nend\nputs \"again\"\n```\n\n",
+          "choices": ["1\n", "infinite\n", "2\n\n"],
+          "response": 2
+        }
+      ],
+      "challenge": {
+        "text": "\nWrite a small program that asks users to enter some sequence of characters and outputs how many characters the user did type.\n\nIf the typed sequence has exactly 13 letters the program must stop.\n\nAt the beginning, the program should say that it will only stop when it gets exactly 13 letters.\n\n",
+        "solution": "\n```ruby\nputs \"I need you to give me some letters or words.\"\nputs \"If you type 13 letters, I'll have enough.\"\n\nloop do\n  print \"Give me letters: \"\n  typed = gets.chomp\n\n  print \"You typed \"\n  print typed.length\n  puts \" letters.\"\n\n  if typed.length == 13\n    exit\n  end\nend\n```\n\n\n"
+      }
+    },
+    {
+      "number": 5,
+      "title": "Ignore empty proposals",
+      "quiz": []
+    },
+    {
+      "number": 6,
+      "title": "Show the letters that the player finds",
+      "quiz": [
+        {
+          "text": "In the following snippet, what is the output?\n```ruby\nme = \"John\"\nyou = me\nputs you\n```\n\n",
+          "choices": [
+            "The output is \"You\"\n",
+            "The output is empty\n",
+            "The output is \"John\"\n\n"
+          ],
+          "response": 3
+        },
+        {
+          "text": "We need to show the same message 3 times, which approach would be better?\n",
+          "choices": [
+            "Define a method (routine) that shows the message\n",
+            "Use the Ruby \"puts\" every time\n",
+            "Output the message the first time, then output \"see above message\"\n\n"
+          ],
+          "response": 1
+        },
+        {
+          "text": "We define a routine/method `show_alert` that needs an argument to produce something like \"Alert: Battery is low\". The \"Alert:\" part is something that we do not need to pass to the method. Which definition is correct?\n",
+          "choices": [
+            "`def show_alert`\n",
+            "`define_method show_alert`\n",
+            "`def show_alert reason`\n\n"
+          ],
+          "response": 3
+        },
+        {
+          "text": "We can take one character from a string with the notation `word[i]` (where `i` is the position of the character we want). What is the output for the following snippet?\n```ruby\nword = \"Good morning!\"\nputs word[5].upcase\n```\n\n",
+          "choices": [
+            "The output is \"M\"\n",
+            "The output is \"O\"\n",
+            "The output is \" \" (the space between \"Good\" and \"morning!\")\n\n"
+          ],
+          "response": 1
+        }
+      ],
+      "challenge": {
+        "text": "\nWrite a small program that asks for a person's first and last names, then asks for his/her parents' names and outputs something like:\n\n```\nMy first name is John\nMy last name is Doe\nMum first name is Mary\nMum last name is Smith\nDad first name is James\nDad last name is Doe\n```\n\n",
+        "solution": "\n```ruby\ndef display who, first_name, last_name\n  print who\n  print \" first name is \"\n  puts first_name\n\n  print who\n  print \" last name is \"\n  puts last_name\nend\n\nprint \"Your first name: \"\nmy_first_name = gets.chomp\nprint \"Your last name: \"\nmy_last_name = gets.chomp\n\nprint \"Your mother first name: \"\nmum_first_name = gets.chomp\nprint \"Your mother last name: \"\nmum_last_name = gets.chomp\n\nprint \"Your father first name: \"\ndad_first_name = gets.chomp\nprint \"Your father last name: \"\ndad_last_name = gets.chomp\n\ndisplay \"My\", my_first_name, my_last_name\ndisplay \"Mum\", mum_first_name, mum_last_name\ndisplay \"Dad\", dad_first_name, dad_last_name\n```\n\n\n"
+      }
+    },
+    {
+      "number": 7,
+      "title": "Temporarily put a problem aside",
+      "quiz": []
+    },
+    {
+      "number": 8,
+      "title": "Split the source code",
+      "quiz": [
+        {
+          "text": "Say we have a routine/method named `add` that adds 2 numbers in a file named \"math.rb\" (located in the same directory as our program), how can we use it?\n",
+          "choices": [
+            "```ruby\n   require_relative \"math\"\n   add 13, 6\n   ```\n\n",
+            "```ruby\n   require_relative \"add\"\n   add 13, 6\n   ```\n\n",
+            "```ruby\n   add 13, 6\n   ```\n\n"
+          ],
+          "response": 1
+        }
+      ],
+      "challenge": {
+        "text": "\nIn the previous challenge, if you wrote a method/routine to display the names, move the method to another file and test if your program is still running as expected.\n\nIf you did not use a method, first create a method, then move it to another file.\n\n",
+        "solution": "\nFile `display.rb`\n\n```ruby\ndef display who, first_name, last_name\n  print who\n  print \" first name is \"\n  puts first_name\n\n  print who\n  print \" last name is \"\n  puts last_name\nend\n```\n\nFile `program.rb`\n\nrequire_relative \"display\"\n\n```ruby\nprint \"Your first name: \"\nmy_first_name = gets.chomp\nprint \"Your last name: \"\nmy_last_name = gets.chomp\n\nprint \"Your mother first name: \"\nmum_first_name = gets.chomp\nprint \"Your mother last name: \"\nmum_last_name = gets.chomp\n\nprint \"Your father first name: \"\ndad_first_name = gets.chomp\nprint \"Your father last name: \"\ndad_last_name = gets.chomp\n\ndisplay \"My\", my_first_name, my_last_name\ndisplay \"Mum\", mum_first_name, mum_last_name\ndisplay \"Dad\", dad_first_name, dad_last_name\n```\n\n\n"
+      }
+    },
+    {
+      "number": 9,
+      "title": "Show all the letters that the player has already found",
+      "quiz": [
+        {
+          "text": "The following snippet assigns the name \"my_collection\" to a collection of numbers (notice how we can write the values that we want to put in the collection). How can we output every item of \"my_collection\"?\n```ruby\nmy_collection = [1, 2, 3, 4, 5]\n```\n\n",
+          "choices": [
+            "```ruby\n   my_collection.each do\n     puts item\n   end\n   ```\n",
+            "```ruby\n   puts \"Impossible to take the items\"\n   ```\n",
+            "```ruby\n   my_collection.each do |item|\n     puts item\n   end\n   ```\n\n"
+          ],
+          "response": 3
+        },
+        {
+          "text": "What is the output of the following snippet (notice that we write the same way to take an element from a collection as to take a character from a string)?\n```ruby\nmy_collection = [1, 2, 3, 4, 5]\nputs my_collection[3]\n```\n\n",
+          "choices": [
+            "Output is \"2\"\n",
+            "Output is \"3\"\n",
+            "Output is \"4\"\n\n"
+          ],
+          "response": 3
+        },
+        {
+          "text": "What is the output of the following snippet?\n```ruby\nputs [1, 2, 3, 4, 5].length\n```\n\n",
+          "choices": [
+            "Output is 5\n",
+            "Output is 0\n",
+            "Ruby complains, it does not understand `length`\n\n"
+          ],
+          "response": 1
+        }
+      ],
+      "challenge": {
+        "text": "\nWrite a program where\n\n1. You define a routine/method named \"give_a_word\" that prompts the user to give a word\n1. You define a routine/method named \"display\" that outputs the content of a collection\n1. You ask for 5 words and display the words using the above methods\n\n",
+        "solution": "\n```ruby\ndef give_a_word\n  print \"Give a word: \"\n  gets.chomp\nend\n\ndef display words\n  words.each do |word|\n    puts word\n  end\nend\n\nwords = []\n\nwords << give_a_word\nwords << give_a_word\nwords << give_a_word\nwords << give_a_word\nwords << give_a_word\n\ndisplay words\n```\n\n\n"
+      }
+    },
+    {
+      "number": 10,
+      "title": "Recall the wrong proposals",
+      "quiz": [
+        {
+          "text": "What is the correct answer?\n",
+          "choices": [
+            "`[1, 2, 7, 8, 7, 3, 9].sort` produces `[1, 2, 3, 7, 8, 9]`\n",
+            "`[1, 2, 7, 8, 7, 3, 9].sort` produces `[1, 2, 3, 7, 7, 8, 9]`\n",
+            "`[1, 2, 7, 8, 7, 3, 9].sort` produces `[1, 2, 3, 7, 8, 7, 9]`\n\n"
+          ],
+          "response": 2
+        },
+        {
+          "text": "What is the correct answer?\n",
+          "choices": [
+            "`[1, 2, 7, 8, 7, 3, 9].uniq` produces `[1]`\n",
+            "`[1, 2, 7, 8, 7, 3, 9].uniq` produces `[1, 2, 3, 7, 8, 9]`\n",
+            "`[1, 2, 7, 8, 7, 3, 9].uniq` produces `[1, 2, 7, 8, 3, 9]`\n\n"
+          ],
+          "response": 3
+        },
+        {
+          "text": "What is the correct answer?\n",
+          "choices": [
+            "`[1, 2, 7, 8, 7, 3, 9].join(\"\")` produces `\"1278739\"`\n",
+            "`[1, 2, 7, 8, 7, 3, 9].join(\", \")` produces `\"1,2,7,8,7,3,9\"`\n",
+            "`[1, 2, 7, 8, 7, 3, 9].join(\"-\")` produces `-35`\n\n"
+          ],
+          "response": 1
+        }
+      ],
+      "challenge": {
+        "text": "\nModify the previous challenge so that the \"display\" routine/method sorts the words and removes repeated words.\n\n",
+        "solution": "\n```ruby\ndef give_a_word\n  print \"Give a word: \"\n  gets.chomp\nend\n\ndef display words\n  words.uniq.sort.each do |word|\n    puts word\n  end\nend\n\nwords = []\n\nwords << give_a_word\nwords << give_a_word\nwords << give_a_word\nwords << give_a_word\nwords << give_a_word\n\ndisplay words\n```\n\n\n"
+      }
+    },
+    {
+      "number": 11,
+      "title": "Declare that the player has won",
+      "quiz": [
+        {
+          "text": "What is the output of the following snippet\n```ruby\nloop do\n  puts \"Hello\"\n  exit\nend\nputs \"Bye\"\n```\n\n",
+          "choices": ["\"Bye\"\n", "\"Hello\" + \"Bye\"\n", "\"Hello\"\n\n"],
+          "response": 3
+        },
+        {
+          "text": "What is the output of the following snippet\n```ruby\nloop do\n  puts \"Hello\"\n  break\nend\nputs \"Bye\"\n```\n\n",
+          "choices": ["\"Bye\"\n", "\"Hello\" + \"Bye\"\n", "\"Hello\"\n\n"],
+          "response": 2
+        }
+      ],
+      "challenge": {
+        "text": "\nCreate a collection containing the words: hello, bye, morning, night, blue, green.\nWrite a loop that outputs every item but stops when the item equals \"blue\".\nOutput \"See you again!\".\n\nDid you notice that using the `each` method of a collection is very close to using `loop`?\n\n_Using loop_\n\n```ruby\nloop do\n  puts \"Hello\"\n  exit\nend\n```\n\n_Using each_\n\n```ruby\n[1,2,3].each do\n  puts \"Hello\"\n  exit\nend\n```\n\n",
+        "solution": "\n```ruby\nwords = [\"hello\", \"bye\", \"morning\", \"night\", \"blue\", \"green\"]\n\nwords.each do |word|\n  if word == \"blue\"\n    break\n  end\n  puts word\nend\n\nputs \"See you again!\"\n```\n\n\n"
+      }
+    },
+    {
+      "number": 12,
+      "title": "Declare that the player has lost",
+      "quiz": [
+        {
+          "text": "In the following snippet, what is the output?\n```ruby\nputs \"Hello, \"\nputs \"John\"\n```\n\n",
+          "choices": [
+            "2 lines, the first is \"Hello, John\", the second is empty\n",
+            "1 line, the first is \"Hello, John\"\n",
+            "2 lines, the first is \"Hello, \", the second is \"John\"\n\n"
+          ],
+          "response": 3
+        },
+        {
+          "text": "In the following snippet, what is the output?\n```ruby\nputs \"Hello, #{\"John\"}\"\n```\n\n",
+          "choices": [
+            "2 lines, the first is \"Hello, John\", the second is empty\n",
+            "1 line, the first is \"Hello, John\"\n",
+            "2 lines, the first is \"Hello, \", the second is \"John\"\n\n"
+          ],
+          "response": 2
+        },
+        {
+          "text": "In the following snippet, what is the output?\n```ruby\nn = 13\nputs n + 7\n```\n\n",
+          "choices": [
+            "The output is 12\n",
+            "The output is 20\n",
+            "The output is 7\n\n"
+          ],
+          "response": 2
+        }
+      ],
+      "challenge": {
+        "text": "\nWrite a program that outputs \"Hello\" 5 times using a loop.\n\n",
+        "solution": "\n```ruby\nn = 0\n\nloop do\n  puts \"Hello\"\n\n  n = n + 1\n\n  if n > 4\n    break\n  end\nend\n```\n\n\n"
+      }
+    },
+    {
+      "number": 13,
+      "title": "Draw the gallows",
+      "quiz": [
+        {
+          "text": "What snippet outputs \"Hello\"?\n",
+          "choices": [
+            "```ruby\n   puts \"Hello\" if 3 == 4\n   ```\n\n",
+            "```ruby\n   puts \"Hellow\" if 1 == 1\n   ```\n\n",
+            "```ruby\n   puts \"Hello\" if 1 == 1\n   ```\n\n"
+          ],
+          "response": 3
+        },
+        {
+          "text": "What snippet outputs \"Hello\"?\n",
+          "choices": [
+            "```ruby\n   puts \"Hello\" unless 3 == 4\n   ```\n\n",
+            "```ruby\n   puts \"Hellow\" unless 1 == 1\n   ```\n\n",
+            "```ruby\n   puts \"Hello\" unless 1 == 1\n   ```\n\n"
+          ],
+          "response": 1
+        },
+        {
+          "text": "Using the \"show\" routine/method of the following snippet, what instruction would output \"Nothing\"?\n```ruby\ndef show value\n  puts \"Nothing\" if value.nil?\nend\n```\n\n",
+          "choices": ["`show \"Nothing\"`\n", "`show nil`\n", "`show 0`\n\n"],
+          "response": 2
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "title": "Support the repeated letters",
+      "quiz": [
+        {
+          "text": "Why does the following snippet output \"3\"?\n```ruby\nword = \"mesmerized\"\nputs word.index(\"m\", 2)\n```\n\n",
+          "choices": [
+            "Because the search starts at the character \"s\"\n",
+            "Because the search starts at the character \"e\"\n",
+            "Because the index searches for any \"m\" character\n\n"
+          ],
+          "response": 1
+        },
+        {
+          "text": "Why does the following snippet output \"0\"?\n```ruby\nword = \"zero\"\nputs word.index(\"z\")\n```\n\n",
+          "choices": [
+            "Because the only \"z\" character is at position 0\n",
+            "Because index searches from position 0 if we do not give a starting position\n",
+            "Because the value of \"word\" is zero\n\n"
+          ],
+          "response": 2
+        }
+      ],
+      "challenge": {
+        "text": "\nWrite a program that outputs each letter after the comma of the following sentence: \"I am tired, the book is so hard!\"\n\nYou must discard the space character after the comma.\n\nThe output must be: \"the book is so hard!\"\n\n",
+        "solution": "\n```ruby\nsentence = \"I am tired, the book is so hard!\"\n\ni = sentence.index(\",\") + 2\n\nloop do\n  if i == sentence.length\n    break\n  end\n\n  print sentence[i]\n\n  i = i + 1\nend\n\nputs\n```\n\n\n"
+      }
+    },
+    {
+      "number": 15,
+      "title": "Choose a random word",
+      "quiz": [
+        {
+          "text": "What is the output of the following snippet?\n```ruby\nn = 17\nif n < 17\n  puts \"lower\"\nelsif n > 17\n  puts \"higher\"\nelsif n >= 17\n  puts \"maybe\"\nelse\n  puts \"\"\nend\n```\n\n",
+          "choices": [
+            "The output is empty\n",
+            "The output is \"lower\"\n",
+            "The output is \"maybe\"\n\n"
+          ],
+          "response": 3
+        },
+        {
+          "text": "What is the output of the following snippet?\n```ruby\nvalues = [3, 5, 13, 17, 22]\nputs values.sample\n```\n\n",
+          "choices": [
+            "The output is 3, 5, 13, 17 or 22\n",
+            "The output is 3, 5, 13, 17 and 22\n",
+            "The output is empty\n\n"
+          ],
+          "response": 1
+        },
+        {
+          "text": "What is the output of the following snippet?\n```ruby\nvalues = [\"Hello\", \"World\", \"Summer\", \"Winter\"]\nputs values\n```\n\n",
+          "choices": [
+            "The output is 1 line being \"Hello World Summer Winter\"\n",
+            "The output is 1 line being \"Hello, World, Summer, Winter\"\n",
+            "The output is 4 lines, one line per word\n\n"
+          ],
+          "response": 3
+        }
+      ],
+      "challenge": {
+        "text": "\nWrite a simple game where the player must find a hidden number drawn from a collection of numbers like `[12, 65, 87, 113, 1, 5]`.\n\nWhen the proposed number is lower than the hidden number, the game outputs: Your guess is too low.\nWhen the proposed number is higher than the hidden number, the game outputs: Your guess is too high.\nWhen the proposed number is equal to the hidden number, the game outputs (and stops): You win.\n\nThe player can make as many proposals as he/she wants.\n\nAgain, the player may stop the game by entering the word \"stop\".\n\nNotice that when we use `gets`, the value we get back is a sequence of characters (a string), here we probably want to use numbers. You can ask Ruby to give the numeric value of a string by using the `to_i` message.\n\nIn the following snippet \"123\" is converted to a number equal to 123.\n\n```ruby\n\"123\".to_i\n```\n\n",
+        "solution": "\n```ruby\nnumbers = [12, 65, 87, 113, 1, 5]\n\nhidden_number = numbers.sample\n\nloop do\n  print \"Enter a number: \"\n\n  guess = gets.chomp.to_i\n\n  if guess == hidden_number\n    puts \"You win\"\n    break\n  elsif guess > hidden_number\n    puts \"Your guess is too high.\"\n  elsif guess < hidden_number\n    puts \"Your guess is too low.\"\n  end\nend\n```\n"
+      }
+    }
+  ]
+}
